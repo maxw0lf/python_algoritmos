@@ -6,12 +6,12 @@ while continuar:
     idades.append(idade)
 
     opcao = input('Deseja digitar outra idade (S/N): ')
-    continuar = (opcao == 'S')
+    continuar = (opcao == 'S') or opcao == 's'
 
 maior = 0
 
 for idade in idades:
     if idade > maior:
         maior = idade
-
-print('Maior: '+str(maior))
+print('As idades informadas foram'+str(idades))
+print('E a maior foi: '+str(maior))
